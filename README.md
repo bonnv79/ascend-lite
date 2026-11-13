@@ -35,7 +35,7 @@ Open http://localhost:3000.
 ## Customizing
 
 - **Text:** all copy lives in `src/content/home.tsx` and `src/content/pricing.ts`. You don't need to touch the components to change the words.
-- **Name, links, navigation:** `src/config/site.ts`. Set `signupUrl` and `loginUrl` to your app, and `NEXT_PUBLIC_SITE_URL` to your domain when you deploy.
+- **Name, links, navigation:** `src/config/site.ts`. Set `signupUrl` and `loginUrl` to your app, and `NEXT_PUBLIC_SITE_URL` to your domain when you deploy (on Vercel the production URL is used until you do).
 - **Colors:** the CSS variables in `src/app/globals.css` (light mode in `:root`, dark mode in `.dark`).
 - **Newsletter:** add your provider (Resend, Loops, ConvertKit...) at the `TODO` in `src/app/actions.ts`.
 - **Screenshots:** the mockups are in `src/components/mockups`. Edit the data arrays at the top, or replace `<AppMockup />` with `next/image` when you have real screenshots.

@@ -7,7 +7,10 @@ export const site = {
   tagline: "Customer feedback, roadmap and changelog in one place",
   description:
     "Ascend helps product teams collect feedback, decide what to build next and tell customers when it ships. One tool instead of three.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  /** Your domain. On Vercel it falls back to the project's production URL. */
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"),
   email: "hello@ascend.example",
   company: "Ascend Labs, Inc.",
   /** Where the "Start free" buttons go. Point it at your app's sign-up page. */
