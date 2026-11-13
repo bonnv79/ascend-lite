@@ -21,6 +21,10 @@ Ascend Lite is the free version of [Ascend](https://ascend.bontemplates.com/prod
 
 ## Getting started
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bonnv79/ascend-lite)
+
+Or run it locally:
+
 ```bash
 npm install
 npm run dev
